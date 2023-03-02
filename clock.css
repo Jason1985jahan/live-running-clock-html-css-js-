@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url(minimal-qsixk71w7hu3alee.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.clock{
+    width: 35rem;
+    height: 35rem;
+    background: rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.18);
+    position: relative;
+    border-radius: 50%;
+}
+.numbers{
+    height: inherit;
+    width: inherit;
+    position: relative;
+    /* border: 1px solid #fff; */
+}
+.numbers div{
+    position: absolute;
+    /* border: 1px solid #fff; */
+    color: #000;
+    font-size: 2.5rem;
+}
+
+
+.twelve{
+    top:1rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+.three{
+    right: 1rem;
+    top:50%;
+    transform: translateY(-50%);
+}
+.nine{
+    left: 1rem;
+    top:50%;
+    transform: translateY(-50%);
+}
+.six{
+    left:50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+
+}
+.arrows{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .arrows::before{    /* ?*/
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    z-index: 10;
+}
+.arrows div{
+    width: 0.7rem;
+    height: 12rem;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 50%;
+    border-radius: 100% 100% 0 0 ;
+    transform-origin: bottom center ; /* ?*/
+} 
+.arrows .hour{
+    height: 10rem;
+    transform: rotate(90deg);
+}
+.arrows .second{
+    background-color: #eb6160;
+    transform: rotate(270deg);
+}
+
+
+
+
+
+
+
